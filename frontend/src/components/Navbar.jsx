@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   const logout = () => {
-    fetch(api_base_url + "/logout", {
+    fetch(api_base_url + "/manage/logout", {
       mode: "cors",
       method: "POST",
       headers: {

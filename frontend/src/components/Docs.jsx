@@ -16,7 +16,7 @@ const Docs = ({ docs }) => {
 
   const deleteDoc = (id, docID) => {
     let doc = document.getElementById(docID);
-    fetch(api_base_url + "/deleteDoc", {
+    fetch(api_base_url + "/manage/deleteDoc", {
       mode: "cors",
       method: "POST",
       headers: {

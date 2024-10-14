@@ -17,7 +17,7 @@ const Login = () => {
 
   const login = (e) => {
     e.preventDefault();
-    fetch(api_base_url + "/login",{
+    fetch(api_base_url + "/manage/login",{
       mode: "cors",
       method: "POST",
       headers: {

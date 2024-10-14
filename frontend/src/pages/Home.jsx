@@ -21,7 +21,7 @@ const Home = () => {
       setError("Please enter title");
     }
     else{
-      fetch(api_base_url + "/createDoc",{
+      fetch(api_base_url + "/manage/createDoc",{
         mode: "cors",
         method: "POST",
         headers: {
@@ -44,7 +44,7 @@ const Home = () => {
   }
 
   const getData = () => {
-    fetch(api_base_url + "/getAllDocs",{
+    fetch(api_base_url + "/manage/getAllDocs",{
       mode: "cors",
       method: "POST",
       headers: {

@@ -13,7 +13,7 @@ const createDocs = () => {
   const [data, setData] = useState("");
 
   const updateDoc = () => {
-    fetch(api_base_url + "/uploadDoc", {
+    fetch(api_base_url + "/manage/uploadDoc", {
       mode: "cors",
       method: "POST",
       headers: {
@@ -35,7 +35,7 @@ const createDocs = () => {
   }
 
   const getContent = () => {
-    fetch(api_base_url + "/getDoc", {
+    fetch(api_base_url + "/manage/getDoc", {
       mode: "cors",
       method: "POST",
       headers: {

@@ -21,7 +21,7 @@ const SignUp = () => {
 
   const createUser = (e) => {
     e.preventDefault();
-    fetch(api_base_url + "/signUp", {
+    fetch(api_base_url + "/manage/signUp", {
       mode: "cors",
       method: "POST",
       headers: {
